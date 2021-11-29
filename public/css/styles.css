@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*header style*/
+.main-head{
+    background-color: #EAC926;
+}
+
+.main-head-top-bar{
+    padding: 20px;
+}
+
+.logo-mercado{
+    width: 220px;
+
+}
+
+.compra-text{
+    font-weight: 50;
+    text-align: center;
+
+}
+
+.main-head-bottom-bar{
+    display: none;
+
+}
+
+.main-head-bottom-bar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-head-bottom-bar a{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.nav-icon{
+    background-color: #03264C;
+    color: white;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    max-width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+/*media 768px*/
+@media (min-width: 768px){
+    .main-head-top-bar{
+        display: flex;
+        justify-content: space-between;
+    } 
+    .compra-text{
+        font-size: 20px;
+        max-width: 350px;
+        text-align: right;
+
+    }
+
+    .nav-icon{
+        display: none;
+    }
+
+    .main-head-bottom-bar{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .main-head-bottom-bar ul{
+        display: flex;
+        padding: 10px;
+
+    }
+
+    .main-head-bottom-bar li{
+        margin: 0 5px;
+    }
+
+
+
+}
+
+/*media 1200px*/
+@media(min-width: 1200px){
+    .main-head-top-bar, .main-head-bottom-bar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .main-head-top-bar{
+        align-items: center;
+    }
+
+    .compra-text{
+        max-width: none;
+        align-items: center;
+        margin: 0px;
+
+    }
+
+    .logo-mercado{
+        width: 300px;
+    
+    }
+    .main-head-bottom-bar li{
+        margin: 0 10px;
+    }
+
+    .main-head-bottom-bar a{
+        font-size: 19px;
+    }
+
+
+    
+}
+
+
+/*main style*/
+
+
+.product-container h3{
+    font-size: 24px;
+}
+
+.product-container .price{
+    font-size: 18px;
+}
+
+.product-container p{
+    font-size: 16px;
+}
+
+/*footer style*/
+.list-foot{
+    text-align: center;
+    list-style: none;
+}
+
+.list-foot li i {
+    color: #1259c3;
+    
+}
