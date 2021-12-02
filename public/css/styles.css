@@ -83,10 +83,107 @@ body{
     padding: 10px;
     border-radius: 10px;
     margin: auto;
+    
 }
 
+
+/*main style*/
+
+.banner {
+        width: 100%;
+}
+
+.main-container {
+
+    text-align: center;
+    background-color: #ebebeb;
+
+}   
+
+
+
+.product-container {
+    padding: 20px;
+    margin: auto;
+    width: 90%;    
+}
+
+.product-article{
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.product-photo { 
+    width: 100%;
+}
+
+.article-description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-top: solid 1px #ebebeb;
+    color: #39b54a;
+    padding: 15px;
+    text-align: left;
+}
+
+.div-price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.article-description i{
+
+    display: block;
+    align-self: flex-end;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+           }
+
+
+
+.article-description .product-price{
+
+    font-size: 18px;
+    color: black;
+
+}
+
+.article-description .product-discount{
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+
+.article-description .product-text {
+
+    font-size: 16px;
+    color:#666;
+    display: none;
+}
+
+.product-title {
+    font-size: 24px;
+    color: #666;
+    text-align: left;
+
+}
+
+
 /*media 768px*/
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
+   
+    /*header*/
+
     .main-head-top-bar{
         display: flex;
         justify-content: space-between;
@@ -124,10 +221,37 @@ body{
 
 
 
+   /*main*/
+    .cont-article{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product-article {
+        width: 45%;
+        margin: 10px 0;
+    }
+
+    .article-description .product-text {;
+        display: block;
+    }
+
+    .product-article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+
 }
 
 /*media 1200px*/
-@media(min-width: 1200px){
+
+@media (min-width: 1200px) {
+    
+    /*header*/
+
+
     .main-head-top-bar, .main-head-bottom-bar {
         max-width: 1200px;
         margin: auto;
@@ -157,125 +281,7 @@ body{
     }
 
 
-    
-}
-
-
-/*main style*/
-
-.banner {
-        width: 100%;
-}
-
-.main-container {
-
-    text-align: center;
-    background-color: #ebebeb;
-
-}   
-
-
-
-.product-container {
-    padding: 20px;
-    margin: auto;
-    width: 90%;    
-}
-
-.product-article{
-    margin-bottom: 10px;
-    background-color: white;
-}
-
-.product-photo { 
-    width: 100%;
-}
-
-.article-description {
-    border-top: solid 1px #ebebeb;
-    color: #39b54a;
-    padding: 15px;
-    text-align: left;
-}
-
-
-
-.product-article i{
-
-        display: block;
-        font-size: 16px;
-        padding: 5px;
-        width: 30px;
-        height: 30px;
-        border: 1px solid #39b54a;
-        background-color: #FFF;
-        border-radius: 50%;
-        right: 20px;
-        top: -15px;
-           }
-
-
-
-.product-article .product-price{
-    display: inline-block;
-    font-size: 18px;
-    color: black;
-    margin-bottom: 2px;
-    width: 30%;
-}
-
-.product-article .product-discount{
-    display: inline;
-    font-size: 16px;
-    margin-top: 2px;
-    width: 70%;
-}
-
-
-.product-article .product-text {
-    
-    font-size: 16px;
-    color:#666;
-    display: none;
-}
-
-.product-title {
-    font-size: 24px;
-    color: #666;
-    text-align: left;
-
-}
-
-
-/*media 768px*/
-
-@media (min-width: 768px) {
-    .cont-article{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .product-article {
-        width: 45%;
-        margin: 10px 0;
-    }
-
-    .product-article .product-text {;
-        display: block;
-    }
-
-    .product-article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-
-}
-
-/*media 1200px*/
-
-@media (min-width: 1200px) {
+   /*main*/
     .cont-article{
         justify-content: space-between;
 
@@ -284,6 +290,7 @@ body{
     .product-article {
         width: 20%;
     }
+
 
     
 
