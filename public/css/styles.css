@@ -7,6 +7,8 @@ body{
 }
 
 /*header style*/
+
+
 .main-head{
     background-color: #EAC926;
 }
@@ -100,8 +102,6 @@ body{
 
 }   
 
-
-
 .product-container {
     padding: 20px;
     margin: auto;
@@ -127,11 +127,6 @@ body{
     text-align: left;
 }
 
-.div-price {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
 
 .article-description i{
 
@@ -145,10 +140,16 @@ body{
     background-color: #FFF;
     border-radius: 50%;
     right: 20px;
-    top: -15px;
-           }
+    position: relative;
+    bottom: 30px;
 
+}
 
+.div-price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 .article-description .product-price{
 
@@ -196,7 +197,7 @@ body{
         font-size: 20px;
         max-width: 350px;
         text-align: center;
-
+        width: 40%;
     }
 
     .nav-icon{
@@ -218,7 +219,6 @@ body{
     .main-head-bottom-bar li{
         margin: 0 5px;
     }
-
 
 
    /*main*/
