@@ -8,13 +8,9 @@ body{
 
 /*header style*/
 
-
 .main-head{
     background-color: #EAC926;
     width: 100%;
-   /* position: fixed;
-    top: 0;
-    z-index: 2;*/
 }
 
 .main-head-top-bar{
@@ -52,8 +48,6 @@ body{
 
 }
 
-
-
 .compra-text{
     font-weight: 50;
     text-align: center;
@@ -88,19 +82,15 @@ body{
     max-width: 50px;
     padding: 10px;
     border-radius: 10px;
-    margin: auto;
-    
+    margin: auto;  
 }
 
-
 /*main style*/
-
 .banner {
-        width: 100%;
+    width: 100%;
 }
 
 .main-container {
-
     text-align: center;
     background-color: #ebebeb;
 
@@ -131,9 +121,7 @@ body{
     text-align: left;
 }
 
-
 .article-description i{
-
     display: block;
     align-self: flex-end;
     font-size: 16px;
@@ -153,18 +141,15 @@ body{
     transform: rotate(-90deg);
 }
 
-
 .product-article {
     box-shadow: none;
 }
+
 .product-article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
-
-
 .product-text {
-
     font-size: 16px;
     color:#666;
     display: none;
@@ -174,9 +159,6 @@ body{
     display: block;
 }
 
-
-
-
 .div-price {
     display: flex;
     flex-wrap: wrap;
@@ -184,25 +166,14 @@ body{
 }
 
 .article-description .product-price{
-
     font-size: 18px;
     color: black;
-
 }
-
-
-
-
 
 .article-description .product-discount{
     font-size: 16px;
     margin-left: 12px;
 }
-
-
-
-
-
 
 .product-title {
     font-size: 24px;
@@ -211,65 +182,21 @@ body{
 
 }
 
-
-
-
-/*form*/
-
-.create-form {
-    background-color: #ebebeb;
-    margin:  auto;
-    margin-top: 206.09px;
-    padding: 10px;
-    width: 45%;
-    text-align: left;
-    border-radius: 5px;
-    display: none;
-
-}
-
-
-.control-div label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.control-div input {
-    margin-bottom: 5px;
-
-}
-
-.control-div select {
-    margin-bottom: 5px;
-}
-
-.control-div button {
-    margin-bottom: 5px;
-    background-color: #39b54a;
-    border-radius: 3px;
-    width: 30%;
-    font-size: 15px;
-    padding: 5px;
-    color: #ffffff;
-}
-
-
 /*footer style*/
 .list-foot{
     text-align: center;
     list-style: none;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 90%;
     margin: 10px auto;
 }
 
-
 .list-foot-li {
-    width: 30%;
+    width: 40%;
 }
 
 .list-foot li i {
@@ -281,7 +208,6 @@ body{
 .list-foot-li:hover i {
     color: #39b54a ;
 }
-
 
 /*media 768px*/
 
@@ -297,11 +223,12 @@ body{
     .logo-div {
         width: 60%;
     }
+
     .compra-text{
-        font-size: 20px;
-        max-width: 350px;
-        text-align: center;
-        width: 40%;
+    font-size: 20px;
+    max-width: 350px;
+    text-align: center;
+     width: 40%;
     }
 
     .nav-icon{
@@ -317,7 +244,6 @@ body{
     .main-head-bottom-bar ul{
         display: flex;
         padding: 10px;
-
     }
 
     .main-head-bottom-bar li{
@@ -326,6 +252,7 @@ body{
 
 
    /*main*/
+   
     .cont-article{
         display: flex;
         flex-direction: row;
@@ -338,25 +265,37 @@ body{
         margin: 10px 0;
     }
 
+    /*footer*/
 
+    .list-foot{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    .list-foot-li {
+        width: 30%;
+    }
 
     /*form regiser*/
 
-
-
     .register-container {
-    max-width: 75%;
+    max-width: 550px;
     }
 
-
     /*form login*/
+
+    .body-login {
+        display: flex;
+        justify-content: center;
+        height: 900px;
+    }
 
     .register-container-login {
         max-width: 50%;
     }
-
-
 }
 
 /*media 1200px*/
@@ -364,7 +303,6 @@ body{
 @media (min-width: 1200px) {
     
     /*header*/
-
 
     .main-head-top-bar, .main-head-bottom-bar {
         max-width: 1200px;
@@ -394,27 +332,20 @@ body{
         font-size: 19px;
     }
 
+    /*main*/
 
-
-
-   /*main*/
     .cont-article{
         justify-content: space-between;
-
     }
 
     .product-article {
         width: 20%;
     }
 
-
-
 /*form regiser*/
 
-
-
-.register-container {
-    max-width: 40%;
+    .register-container {
+        max-width: 600px;
 }
 
     /*form login*/
@@ -423,8 +354,6 @@ body{
         max-width: 30%;
     }
 
-
-
 }
 
 
@@ -432,13 +361,21 @@ body{
 
 /*register form*/
 
+.body-register {
+    display: flex;
+    justify-content: center;
+    height: 900px;
+    background-color: #EAC926;
+}
+
+
 .register-section {
     background-color: #FFF;
     width: 80%;
     height: 440px;
     margin: auto;
     font-family: 'Roboto', sans-serif;
-    
+    background-color: #EAC926;
 }
 
 .register-container {
@@ -449,9 +386,12 @@ body{
     margin:  auto;
     padding: 20px;
     border-radius: 5px;
-
 }
 
+.register-container:hover {
+    box-shadow:  5px 5px 10px #5a5a5a,
+    -5px -5px 10px #b4b4b4;
+}
 
 
 .register-container label {
@@ -459,8 +399,6 @@ body{
     font-size: 18px;
     color:rgb(65, 65, 65);
 }
-
-
 
 .form-div {
     margin: 10px;
@@ -478,7 +416,6 @@ body{
 .form-div select {
     margin-top: 5px;
 }
-
 
 .button-div {
     display: flex;
@@ -505,6 +442,13 @@ body{
     width: 40%;
 }
 
+.button-1:hover{
+    background-color: #0022AA;
+}
+
+.button-2:hover{
+    background-color: #0022AA;
+}
 
 .radio-div {
     display: flex;
@@ -519,29 +463,40 @@ body{
 
 /*form login*/
 
+.body-login {
+    display: flex;
+    justify-content: center;
+    height: 900px;
+    background-color: #EAC926;;
+}
 
 .register-section-login  {
     background-color: #FFF;
     width: 100%;
-    height: 150px;
+    height: 200px;
     margin: auto;
     font-family: 'Roboto', sans-serif;
-
-
+    background-color: #EAC926;  
 }
 
 .register-container-login {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     background-color: #ebebeb;
     text-align: left;
-    width: 70%;
+    width: 360px;
     height: 100%;
     margin:  auto;
     padding: 20px;
     border-radius: 5px;
-
 }
 
-
+.register-container-login:hover {
+    box-shadow:  5px 5px 10px #5a5a5a,
+    -5px -5px 10px #b4b4b4;
+}
 
 
 .form-div-login input{
@@ -556,11 +511,9 @@ body{
 
 
 .button-div-login {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px;
-    gap: 10px;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
 }
 
 
@@ -572,16 +525,15 @@ body{
 	cursor:pointer;
 	color:rgb(224, 221, 221);
 	font-family: 'Roboto', sans-serif;
-	font-size:15px;
+	font-size:10px;
 	font-weight:bold;
 	padding:6px 24px;
+    text-align: center;
 	text-decoration:none;
 	text-shadow:0px 1px 27px #528009;
-    width: 30%;
+    width: 40%;
 
 }
-
-
 
 .button-div-login:hover button {
     background-color: #0022AA;
