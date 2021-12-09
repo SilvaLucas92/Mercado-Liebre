@@ -15,3 +15,13 @@ app.get("/", (req, res)=>{
     let htmlPath = path.resolve(__dirname, "views/home.html")
     res.sendFile(htmlPath);
 });
+
+app.get("/register", (req, res)=>{
+    let registerPath = path.resolve(__dirname, "views/register.html")
+    res.sendFile(registerPath);
+});
+
+app.get("/login", (req, res)=>{
+    let loginPath = path.resolve(__dirname, "views/login.html")
+    res.sendFile(loginPath);
+});

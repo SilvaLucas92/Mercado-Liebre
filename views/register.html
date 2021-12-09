@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+</head>
+<body>
+    <section class="register-section">
+    <form action="" class="register-container" method="get">
+        <div class="div-container">
+        <div class="form-div">
+            <input type="text" name="nombre" id="nombre-apellido" placeholder="Nombre y Apellido">
+        </div>
+        <div class="form-div">
+            <input type="text" name="usuario" id="nombre-usuario" placeholder="Nombre de Usuario">
+        </div>
+        <div class="form-div">
+            <input type="date" name="fecha"  value= "1992/01/23" id="fecha-nacimiento">
+        </div>
+        <div class="form-div">
+            <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+        </div>
+        <div class="form-div">
+            <label for="compra-venta">Perfil de Usuario: </label>
+            <div class="radio-div">
+            <input type="radio" name="compra-venta" value="compra"><label>compra</label>
+            <input type="radio" name="compra-venta" value="venta"><label>venta</label>
+            </div>
+        </div>
+        <div class="form-div">
+            <label>Categorias de Interes: </label>
+            <select name="categorias">
+                <option value="electro">Electro</option>
+                <option value="moda">Moda</option>
+                <option value="hogar">Hogar</option>
+                <option value="jugueteria">Jugueteria</option>
+                <option value="vida-sana">Vida Sana</option>
+            </select>
+        </div>
+        <div class="form-div">
+            <input type="password" value="contra" placeholder="Contraseña">
+        </div>
+        <div class="button-div">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </div>
+    </div>
+    </form>
+</section>
+</body>
+</html>

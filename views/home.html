@@ -45,8 +45,50 @@
         </nav>
 
     </header>
+    
     <!--Contenido Principal-->
     <main class="main-container">
+
+    <!--formulario-->
+    <form action="/crear-producto" method="GET" class="create-form">
+        <div class="control-div">
+            <label for="nombre-apellido">Nombre y Apellido: </label>
+            <input type="text" name="nombre" id="nombre-apellido">
+        </div>
+        <div class="control-div">
+            <label for="precio">Precio: </label>
+            <input type="number" name="precio" id="precio">
+        </div>
+        <div class="control-div">
+            <label>Categoria: </label>
+            <select name="categoria">
+                <option value="hogar">Hogar</option>
+                <option value="electro">Electro</option>
+                <option value="indumentaria">Indumentaria</option>
+            </select>
+        </div>
+        <div class="control-div">
+            <label for="select-ciudad">Ciudad: </label>
+            <select name="ciudad" id="select-ciudad">
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Entre Rios">Entre Rios</option>
+            </select>
+        </div>
+        <div class="control-div">
+            <label>Descripcion: </label>
+            <textarea name="descripcion"></textarea>
+        </div>
+        <div class="control-div">
+            <label>Esta en oferta: </label>
+            <input type="radio" name="enOferta">
+        </div>
+        <div class="control-div">
+            <button type="reset">Borrar </button>
+            <button type="submit">Guardar </button>
+        </div>
+    </form>
+
         <img src="/images/img-home-banner.jpg" alt="banner"class="banner">
         <!--Ultima visita-->
         <section class="product-container">
@@ -153,22 +195,22 @@
     <footer>
         <ul class="list-foot">
             
-            <li>
+            <li class="list-foot-li">
                 <i class="fas fa-credit-card"></i>
-                <h3>Pagá con tarjeta o en efectivo</h3></li>
+                <h3>Pagá con tarjeta o en efectivo</h3>
                 <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
                     puntos de pago. ¡Y siempre es seguro!</p></li>
-            <li>
+            <li class="list-foot-li">
                 <i class="fas fa-gift"></i>
                 <h3>Envío gratis desde $ 2.500</h3>
                 <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                     productos. Es un beneficio de Mercado Puntos.</p></li>
-            <li>
+            <li class="list-foot-li">
                 <i class="fas fa-user-shield"></i>
                 <h3>Seguridad, de principio a fin</h3>
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                     porque estás siempre protegid@.</p></li>
-            <li><h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3></li>
+            <li class="list-foot-li"><h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3></li>
             
         </ul>
 

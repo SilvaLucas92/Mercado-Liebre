@@ -11,6 +11,10 @@ body{
 
 .main-head{
     background-color: #EAC926;
+    width: 100%;
+   /* position: fixed;
+    top: 0;
+    z-index: 2;*/
 }
 
 .main-head-top-bar{
@@ -145,6 +149,34 @@ body{
 
 }
 
+.product-article:hover i{
+    transform: rotate(-90deg);
+}
+
+
+.product-article {
+    box-shadow: none;
+}
+.product-article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+
+.product-text {
+
+    font-size: 16px;
+    color:#666;
+    display: none;
+}
+
+.product-article:hover .product-text {
+    display: block;
+}
+
+
+
+
 .div-price {
     display: flex;
     flex-wrap: wrap;
@@ -158,24 +190,96 @@ body{
 
 }
 
+
+
+
+
 .article-description .product-discount{
     font-size: 16px;
     margin-left: 12px;
 }
 
 
-.article-description .product-text {
 
-    font-size: 16px;
-    color:#666;
-    display: none;
-}
+
+
 
 .product-title {
     font-size: 24px;
     color: #666;
     text-align: left;
 
+}
+
+
+
+
+/*form*/
+
+.create-form {
+    background-color: #ebebeb;
+    margin:  auto;
+    margin-top: 206.09px;
+    padding: 10px;
+    width: 45%;
+    text-align: left;
+    border-radius: 5px;
+    display: none;
+
+}
+
+
+.control-div label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.control-div input {
+    margin-bottom: 5px;
+
+}
+
+.control-div select {
+    margin-bottom: 5px;
+}
+
+.control-div button {
+    margin-bottom: 5px;
+    background-color: #39b54a;
+    border-radius: 3px;
+    width: 30%;
+    font-size: 15px;
+    padding: 5px;
+    color: #ffffff;
+}
+
+
+/*footer style*/
+.list-foot{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+}
+
+
+.list-foot-li {
+    width: 30%;
+}
+
+.list-foot li i {
+    color: #1259c3;
+    font-size: 30px;
+    
+}
+
+.list-foot-li:hover i {
+    color: #39b54a ;
 }
 
 
@@ -234,12 +338,22 @@ body{
         margin: 10px 0;
     }
 
-    .article-description .product-text {;
-        display: block;
+
+
+
+    /*form regiser*/
+
+
+
+    .register-container {
+    max-width: 75%;
     }
 
-    .product-article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    /*form login*/
+
+    .register-container-login {
+        max-width: 50%;
     }
 
 
@@ -281,6 +395,8 @@ body{
     }
 
 
+
+
    /*main*/
     .cont-article{
         justify-content: space-between;
@@ -292,17 +408,181 @@ body{
     }
 
 
-    
+
+/*form regiser*/
+
+
+
+.register-container {
+    max-width: 40%;
+}
+
+    /*form login*/
+
+    .register-container-login {
+        max-width: 30%;
+    }
+
+
 
 }
 
-/*footer style*/
-.list-foot{
-    text-align: center;
-    list-style: none;
+
+
+
+/*register form*/
+
+.register-section {
+    background-color: #FFF;
+    width: 80%;
+    height: 440px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
-.list-foot li i {
-    color: #1259c3;
-    
+.register-container {
+    background-color: #ebebeb;
+    text-align: left;
+    width: 90%;
+    height: 100%;
+    margin:  auto;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+
+
+.register-container label {
+    display: block;
+    font-size: 18px;
+    color:rgb(65, 65, 65);
+}
+
+
+
+.form-div {
+    margin: 10px;
+}
+
+.form-div input, select {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    border-width: 0;
+    margin-top: 5px;
+    color:rgb(112, 112, 112);
+}
+
+.form-div select {
+    margin-top: 5px;
+}
+
+
+.button-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+.button-div button {
+
+    background-color: #39b54a;
+	border-radius:6px;
+	border:1px solid #39b54a;
+	display:inline-block;
+	cursor:pointer;
+	color:rgb(224, 221, 221);
+	font-family: 'Roboto', sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 27px #528009;
+    width: 40%;
+}
+
+
+.radio-div {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.radio-div input {
+    width: 10%;
+    padding-right: 15px;
+}
+
+/*form login*/
+
+
+.register-section-login  {
+    background-color: #FFF;
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.register-container-login {
+    background-color: #ebebeb;
+    text-align: left;
+    width: 70%;
+    height: 100%;
+    margin:  auto;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+
+
+
+.form-div-login input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    border-width: 0;
+    margin-top: 5px;
+    color:rgb(112, 112, 112);
+}
+
+
+
+.button-div-login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+
+.button-div-login button {
+    background-color: #39b54a;
+	border-radius:6px;
+	border:1px solid #39b54a;
+	display:inline-block;
+	cursor:pointer;
+	color:rgb(224, 221, 221);
+	font-family: 'Roboto', sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 27px #528009;
+    width: 30%;
+
+}
+
+
+
+.button-div-login:hover button {
+    background-color: #0022AA;
 }
